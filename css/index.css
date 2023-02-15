@@ -1,0 +1,512 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html{
+    background-image: url("../image/bg2.png");
+    background-position: center;
+    background-size: cover;
+}
+.CompanyName{
+  float: left;
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  font-weight: bolder;
+  margin: 1rem;
+  padding: .5rem;
+  color: cyan;
+}
+.topnav {
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: .5rem;
+    margin: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .active {
+    background-color: #28b2ee;
+    color: white;
+    border-radius: 10px;
+    border-color: #28b2ee;
+    padding: .5rem;
+    margin: 2rem;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 1.2rem;    
+    border: none;
+    outline: none;
+    color: black;
+    padding: .5rem;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 1rem;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-radius: 10px;
+  }
+  
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #28b2ee;
+    color: white;
+    border-radius: 10px;
+    border-color: #28b2ee;
+    
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #28b2ee;
+    color: white;
+    border-radius: 10px;
+    border-color: #28b2ee;
+    
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: -10px;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: right;
+      margin-right: 2rem;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: right;
+      margin-right: 1.5rem;
+      padding-right: 3rem;
+    }
+  }
+
+.hero{
+  height: 50vh;
+  display: block;
+  justify-content: space-between;
+
+}
+
+.heroleft{
+  float: left;
+  height: 100%;
+  margin: 3rem;
+  display: block;
+  padding: 1.5rem;
+  justify-content: space-between;
+  min-width: 300px;
+  max-width: 40%;
+}
+.heroleft button{
+   margin-top: 3rem;
+   margin-bottom: 3rem;
+   padding: .5rem;
+   align-items: center;
+   font-size: larger;
+   border-radius: 10px;
+   border-style: none;
+}
+.btn1{
+  background-color: cyan;
+}
+.btn1 i{
+  margin-right: .5rem;
+}
+.btn2{
+  background: none;
+  border-color: cyan;
+  color: rgb(6, 99, 99);
+  outline: 5px solid;
+}
+.heroleft h1{
+ font-size: 3rem;
+ font-family: 'Courier New', Courier, monospace;
+ font-weight: 100px;
+}
+.heroright{
+  float: right;
+  margin: 1rem;
+  display: block;
+  padding: 1.5rem;
+  justify-content: space-between;
+  min-width: 300px;
+  max-width: 50%;
+  height: 40vh; 
+}
+
+.heroright img{
+  height: 100%;
+}
+
+
+.destdetails{
+  width: 100%;
+  min-height: 25vh;
+  clear: both;
+  background-color: rgba(0,0,0,0.2);
+}  
+.destdetails h4{
+  justify-content: center;
+  margin: 1rem;
+  padding: .5rem;
+  font-size: 1.5rem;
+  font-weight: 100px;
+  display: flex;
+}
+
+.input-group {
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.input-group .form-input {
+  background: none;
+  background-color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  margin: 25px 0;
+}
+
+.input-group .form-input:focus {
+  outline: none;
+  border-color: cyan;
+}
+
+.destdetails button{
+  padding: .4rem;
+  align-items: center;
+  font-size: 1rem;
+  border-radius: 10px;
+  border-style: none;
+  margin: .5rem;
+}
+
+.bestpackage{
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.05);
+}
+
+.bestpackage h1{
+  justify-content: center;
+  margin: 1rem;
+  font-size: 2rem;
+  padding: .5rem;
+  font-weight: 100px;
+  display: flex;
+}
+.bestpara{
+  justify-content: center;
+  margin: .5rem;
+  font-size: 1rem;
+  padding: .2rem;
+  font-weight: 100px;
+  display: flex;
+}
+.areanav {
+  display: flex;
+  justify-content: center;
+  min-width: 300;
+}
+
+@media screen and (max-width: 600px) {
+  .areanav{
+    display: block;
+  }
+  .areanav li{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.areanav li{
+  padding: .5rem 2rem;
+  list-style: none;
+  font-size: 1.2rem;
+  border: 1px solid;
+}
+
+
+.grid { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-gap: 3rem;
+  align-items: stretch;
+  margin: 2rem;
+  }
+.grid > article {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  min-height: 70vh;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.08);
+  
+}
+.grid > article img {
+  max-width: 100%;
+  height: 45vh;
+  border-radius: 10px;
+}
+.text {
+  padding: .5rem;
+  margin: 1rem;
+}
+.text h3{
+  margin: 1rem 0rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text > button {
+  background: cyan;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 50%;
+  border-radius: 10px;
+  margin-top: 2rem;
+  }
+
+.testo{
+  background-color: rgba(0,0,0,0.08);
+}
+
+ 
+
+  .testo h1{
+          display:flex;
+          justify-content: center;
+          font-size: 1.5rem;
+          font-weight: 100px;
+          margin: 2rem;
+          padding: 1rem;
+  }
+  .testinomial{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap:20px;
+  
+  }
+  .card{
+    position: relative;
+    width:100%;
+    margin: 2rem;
+    background:#333;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    text-align: center;
+    min-height: 60vh;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+      overflow:hidden;
+      border-radius: 10px;
+  
+  }
+  .layer {
+  
+  position: absolute;
+  top: calc(100% - 4px);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(#03a9f4,#c4c0c4);
+  z-index: 1;
+  transition: .5s;
+  
+  }
+  .content{
+    z-index: 2;
+    position: relative;
+    padding: 10px;
+  }
+  .card:hover .layer{
+    top: 0;
+  
+  }
+  .content p , .details h2{
+    font-size: 18px;
+    line-height: 34px;
+    color: #fff;
+  
+  }
+  .testistar{
+    margin-top: 2rem;
+    padding: .3rem;
+    position: relative;
+    bottom: -2rem;
+    color: gold;
+  }
+  .image{
+    width: 100px;
+    height: 100px;
+    margin:0 auto;
+    box-sizing: border-box;
+    border-radius: 50%;
+    overflow: hidden;
+    border:4px solid #fff;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+      
+  }
+
+  
+  .appdownloadposter{
+    background-color:black;
+    min-height: 30vh;
+    position: relative;
+    bottom: -5rem;
+    right: -6rem;
+    width: 80%;
+    margin: 0rem 3rem;
+    color: white;
+
+  }
+  .appdownloadposter h1{
+    margin-top: 2rem;
+    padding: .5rem;
+    float: left;
+    width: 30ch;
+  
+  }
+  .appdownloadposter img{
+    float: right;
+    height: 55vh;
+    position: relative;
+    top: -20vh;
+  }
+
+  @media screen and (max-width: 600px) {
+    .appdownloadposter{
+      right: -1rem; 
+      width: 90%;
+      position: relative;
+      margin: 2rem;
+      
+    }
+    .appdownloadposter img{
+      margin-top: 12vh;
+      
+    }
+    .appdownloadposter h1{
+      width: 100%;
+      
+    }
+  }
+  
+  .footercontent{
+        clear: both;
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.12);
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem 0rem;
+        padding: 1rem;
+  }
+  .content h1{
+       display: flex;
+       justify-content: center;
+       font-size: 5rem;
+       font-style: italic;
+       font-family: 'Courier New', Courier, monospace;
+       font-weight: bolder;
+       color: cyan;
+  }
+  .content p{
+         display: flex;
+         justify-content: center;
+         color: black;
+  }
+  .content ul{
+    display: block;
+
+  }
+  .content li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: .8rem;
+    padding: .3rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    .footercontent{
+      flex-direction: column;
+      
+    }
+    .appdownloadposter img{
+      margin-top: 12vh;
+      
+    }
+    .appdownloadposter h1{
+      width: 100%;
+      
+    }
+  }
+  .copyrites{
+    margin-bottom: 2rem;
+    padding: .5rem;
+  }
+  .copyrites p{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+  }

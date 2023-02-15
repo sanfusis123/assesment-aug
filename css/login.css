@@ -1,0 +1,59 @@
+.logincontainer{
+    min-height: 60vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.logincard{
+    position: relative;
+    min-width: 30%;
+    margin: 2rem;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    text-align: center;
+    min-height: 60vh;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+      overflow:hidden;
+      border-radius: 10px;
+    display: block;
+    justify-content: space-around;  
+  }
+  
+.logincard h1{
+    width: 100%;
+    margin-bottom: 5rem;
+}  
+.logincard label{
+    width: 100%;
+    position: relative;
+    left: -13rem;
+    margin: .5rem;
+}  
+.logincard input{
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border-color: cyan;
+}  
+
+.logincard button{
+    width: 40%;
+    height: 2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+.logincard button:hover{
+    background-color: cyan;
+    color: white;
+    
+}
+@media screen and (max-width: 600px) {
+    .logincontainer{
+      flex-direction: column-reverse;
+    }
+    
+  }
+  
+

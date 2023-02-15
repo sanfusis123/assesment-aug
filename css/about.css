@@ -1,0 +1,114 @@
+.glance{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+}
+.glance h1{
+          display: flex;
+          justify-content: center;
+          margin: 5rem;
+          padding: 1rem;
+}
+.topdestination{
+    min-height: 50vh;
+
+}
+.topdestination h1{
+    margin: 2rem;
+    padding: .5rem;
+
+}
+.grid { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-gap: 3rem;
+    align-items: center;
+    margin: 2rem;
+    }
+  .grid > article {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    min-height: 35vh;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.08);
+    
+  }
+  .aboutitem{
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutitem img {
+    max-width: 100%;
+    position: relative;
+    margin: -5px;
+    padding: -5px;
+
+  }
+  .aboutitem > h3{
+    position: relative;
+    display: flex;
+    top: -3rem;
+    font-size: 1.5rem;
+    right: -8rem;
+    color: black;
+  }
+
+
+  .aboutlaksh{
+    display: flex;
+  }
+  .aboutlaksh img{
+    height: 50vh;
+    float: left;
+  }
+  .aboutlaksh p{
+    font-size: medium;
+    line-height: 2rem;
+  }
+  @media screen and (max-width: 600px) {
+    .aboutlaksh{
+      flex-direction: column-reverse;
+    }
+    
+  }
+  
+  .extra{
+    width: 100%;
+    display: block;
+    justify-content: left;
+    line-height: 2rem
+  }
+  .tripevents{
+    display: flex;
+    width: 100%;
+    min-height: 30vh;
+    background-color: rgba(0,0,0,0.3);
+    justify-content: center;
+  }
+  @media screen and (max-width: 600px) {
+    .tripevents{
+      flex-direction: column-reverse;
+    }
+    
+  }
+  .tripevents span{
+    max-width: 20vw;
+    margin: 3rem;
+    padding: 1rem;
+    color: red;
+  }
+  .tripevents span img{
+      height: 8rem; 
+      object-fit: cover;
+}
+.tripevents span h6{
+     display: flex;
+     justify-content: center;
+}
+.tripevents h1{
+    position: relative;
+    right: -40vw;
+}
+
+  
